@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "522a4c3c-12c3-45d1-a3ad-cb5cde6824e4",
+		"name": "api Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27454116",
+		"_collection_link": "https://winter-comet-893914.postman.co/workspace/My-Workspace~4e0b780c-6862-4e8a-8488-bcde5226f63c/collection/27454116-522a4c3c-12c3-45d1-a3ad-cb5cde6824e4?action=share&creator=27454116&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "get paginate users",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api-users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get paginate users page 2",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api-users?page=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-users"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						},
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api-users?name=juan&lastname=fernandez&identification_number=1151656511&cell_phone=+573235305568&email=correo@correo.com&address=calle %2313&note=nota 1 ",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "juan"
+						},
+						{
+							"key": "lastname",
+							"value": "fernandez"
+						},
+						{
+							"key": "identification_number",
+							"value": "1151656511"
+						},
+						{
+							"key": "cell_phone",
+							"value": "+573235305568"
+						},
+						{
+							"key": "email",
+							"value": "correo@correo.com"
+						},
+						{
+							"key": "address",
+							"value": "calle %2313"
+						},
+						{
+							"key": "note",
+							"value": "nota 1 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api-users/1?name=juan(actualizado)&lastname=fernandez&identification_number=1151656511&cell_phone=+573235305568&email=correo@correo.com&address=calle %2313&note=nota 1 ",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-users",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "juan(actualizado)"
+						},
+						{
+							"key": "lastname",
+							"value": "fernandez"
+						},
+						{
+							"key": "identification_number",
+							"value": "1151656511"
+						},
+						{
+							"key": "cell_phone",
+							"value": "+573235305568"
+						},
+						{
+							"key": "email",
+							"value": "correo@correo.com"
+						},
+						{
+							"key": "address",
+							"value": "calle %2313"
+						},
+						{
+							"key": "note",
+							"value": "nota 1 "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api-users/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-users",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "juan",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "fernandez",
+							"disabled": true
+						},
+						{
+							"key": "identification_number",
+							"value": "1151656511",
+							"disabled": true
+						},
+						{
+							"key": "cell_phone",
+							"value": "+573235305568",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "correo@correo.com",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "calle %2313",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "nota 1 ",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/api-users/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"api-users",
+						"1"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "juan",
+							"disabled": true
+						},
+						{
+							"key": "lastname",
+							"value": "fernandez",
+							"disabled": true
+						},
+						{
+							"key": "identification_number",
+							"value": "1151656511",
+							"disabled": true
+						},
+						{
+							"key": "cell_phone",
+							"value": "+573235305568",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "correo@correo.com",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "calle %2313",
+							"disabled": true
+						},
+						{
+							"key": "note",
+							"value": "nota 1 ",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
