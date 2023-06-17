@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+.container-md{
+    @apply w-[50%] mx-auto
+}
+
+.label{
+    @apply block mb-2 text-sm font-medium text-gray-900 dark:text-white
+  }
+  .labelInput{
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600
+    block w-full p-2.5
+  }
+  
+.alerta-error {
+    @apply pl-[30px] pr-[15px] py-[15px] uppercase m-0 text-xs font-bold bg-red-200 border-l-8 border-red-800
+}
+
+.alerta-exito {
+    @apply pl-[30px] mb-5 pr-[15px] py-[15px] uppercase m-0 text-xs font-bold bg-green-200 border-l-8 border-green-800
+}
+
+.paginacion {
+    @apply mt-[50px] mb-[30px] flex sm:justify-end justify-center flex-wrap gap-[10px] text-blue-600
+}
+
+.paginacion a:not([class]) {
+    @apply border-2 border-blue-600 rounded-lg p-[10px] hover:bg-blue-600 hover:text-white
+}
+
+.pagina-numeros {
+    @apply sm:flex hidden justify-center gap-2 items-center font-bold
+}
+
+.pagina-numeros a {
+    @apply hover:text-gray-600
+}
+
+.pagina-numeros span {
+    @apply text-gray-600
+}
